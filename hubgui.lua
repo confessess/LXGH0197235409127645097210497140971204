@@ -26,15 +26,6 @@ local MenuOpen = true
 
 local ScriptLibrary = {
     {
-        Name = "Universal",
-        Game = "All Games",
-        Tag = "Universal",
-        Description = "A universal card at the top for quick access to shared scripts and general hub actions.",
-        Script = [[
-print("[LightHub] Universal loaded")
-]],
-    },
-    {
         Name = "Blox Fruits",
         Game = "Blox Fruits",
         Tag = "Combat",
