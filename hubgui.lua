@@ -49,7 +49,7 @@ print("[LightHub] Pet Simulator 99 loaded")
         Tag = "Combat",
         Description = "Movement and aiming assistance script built for quick execution in fast matches.",
         Script = [[
-print("[LightHub] Arsenal loaded")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/confessess/AR097125409721047210947/main/main.lua"))()
 ]],
     },
     {
