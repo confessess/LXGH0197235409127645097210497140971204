@@ -2,6 +2,7 @@ local ArsenalURL = "https://raw.githubusercontent.com/confessess/AR0971254097210
 local BloxStrikeURL = "https://raw.githubusercontent.com/confessess/BS097510971057105710957/main/main.lua"
 local MM2URL = "https://raw.githubusercontent.com/confessess/MM097059417091750917/main/main.lua"
 local FTAPURL = "https://raw.githubusercontent.com/confessess/FTAP097509175091765091750/main/main.lua"
+local PrisonLifeURL = "https://raw.githubusercontent.com/confessess/PL09714017540917509/refs/heads/main/main.lua"
 
 local function safeLoad(url, name)
     local ok, result = pcall(function()
@@ -33,5 +34,10 @@ end
 
 if game.PlaceId == 6961824067 then
     safeLoad(FTAPURL, "FTAP")
+    return
+end
+
+if game.PlaceId == 155615604 then
+    safeLoad(PrisonLifeURL, "Prison Life")
     return
 end
