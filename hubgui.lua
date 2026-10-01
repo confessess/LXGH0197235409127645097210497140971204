@@ -43,7 +43,16 @@ if game.PlaceId == 155615604 then
     return
 end
 
-if game.PlaceId == 17625359962 then
+local RivalsPlaceIds = {
+    [17625359962] = true,
+    [133215910299950] = true,
+    [129604661913557] = true,
+    [117398147513099] = true,
+    [71874690745115] = true,
+    [18126510175] = true,
+}
+
+if RivalsPlaceIds[game.PlaceId] then
     safeLoad(RivalsURL, "Rivals")
     return
 end
