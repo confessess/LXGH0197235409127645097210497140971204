@@ -77,13 +77,12 @@ if RivalsPlaceIds[game.PlaceId] then
 end
 
 local BladeBallPlaceIds = {
-    [13772394625] = true,
+    [16281300371] = true,
+    [16456370330] = true,
+    [15131065025] = true,
+    [15234596844] = true,
     [14732610803] = true,
     [14915220621] = true,
-    [15131065025] = true,
-    [15144787112] = true,
-    [15264892126] = true,
-    [15509350986] = true,
 }
 
 if BladeBallPlaceIds[game.PlaceId] then
