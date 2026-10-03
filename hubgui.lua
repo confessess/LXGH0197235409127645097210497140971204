@@ -6,6 +6,7 @@ local PrisonLifeURL = "https://raw.githubusercontent.com/confessess/PL0971401754
 local RivalsURL = "https://raw.githubusercontent.com/confessess/RVLS0917509175075097/refs/heads/main/main.lua"
 local SpellingBeeURL = "https://raw.githubusercontent.com/confessess/SPPLNG01972501675/refs/heads/main/main.lua"
 local MuscleLegendsURL = "https://raw.githubusercontent.com/confessess/ML097150175017/refs/heads/main/main.lua"
+local BladeBallURL = "https://raw.githubusercontent.com/confessess/BB09861506105610561567/main/main.lua"
 local RideAPetURL = "https://raw.githubusercontent.com/confessess/RDPET912970891275092175/refs/heads/main/main.lua"
 
 local function safeLoad(url, name)
@@ -72,5 +73,20 @@ local RivalsPlaceIds = {
 
 if RivalsPlaceIds[game.PlaceId] then
     safeLoad(RivalsURL, "Rivals")
+    return
+end
+
+local BladeBallPlaceIds = {
+    [13772394625] = true,
+    [14732610803] = true,
+    [14915220621] = true,
+    [15131065025] = true,
+    [15144787112] = true,
+    [15264892126] = true,
+    [15509350986] = true,
+}
+
+if BladeBallPlaceIds[game.PlaceId] then
+    safeLoad(BladeBallURL, "Blade Ball")
     return
 end
