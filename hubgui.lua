@@ -8,6 +8,7 @@ local SpellingBeeURL = "https://raw.githubusercontent.com/confessess/SPPLNG01972
 local MuscleLegendsURL = "https://raw.githubusercontent.com/confessess/ML097150175017/refs/heads/main/main.lua"
 local BladeBallURL = "https://raw.githubusercontent.com/confessess/BB09861506105610561567/main/main.lua"
 local RideAPetURL = "https://raw.githubusercontent.com/confessess/RDPET912970891275092175/refs/heads/main/main.lua"
+local BubbleGumSimulatorURL = "https://raw.githubusercontent.com/confessess/BGS09816249806495061984/main/main.lua"
 
 local function safeLoad(url, name)
     local ok, result = pcall(function()
@@ -54,6 +55,11 @@ end
 
 if game.PlaceId == 124216119978534 then
     safeLoad(RideAPetURL, "Ride a Pet")
+    return
+end
+
+if game.PlaceId == 85896571713843 then
+    safeLoad(BubbleGumSimulatorURL, "Bubble Gum Simulator")
     return
 end
 
